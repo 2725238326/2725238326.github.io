@@ -1,0 +1,930 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo | Hexo</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="北航学生社团QQ群导航                        &#x2F;* --- Basic Setup &amp; Variables --- *&#x2F;         :root {             --primary-color: #005bac; &#x2F;* BUAA Blue *&#x2F;             --secondary-color: #f0f8ff;">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="https://言芊芊.我爱你/html_pages/%E7%A4%BE%E5%9B%A2%E5%88%97%E8%A1%A8.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="北航学生社团QQ群导航                        &#x2F;* --- Basic Setup &amp; Variables --- *&#x2F;         :root {             --primary-color: #005bac; &#x2F;* BUAA Blue *&#x2F;             --secondary-color: #f0f8ff;">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://xn--fg1aa248c.xn--6qq986b3xl/img/butterfly-icon.png">
+<meta property="article:published_time" content="2025-08-17T05:57:34.305Z">
+<meta property="article:modified_time" content="2025-08-17T05:31:09.105Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://xn--fg1aa248c.xn--6qq986b3xl/img/butterfly-icon.png"><script type="application/ld+json"></script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://言芊芊.我爱你/html_pages/%E7%A4%BE%E5%9B%A2%E5%88%97%E8%A1%A8.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Failed',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo',
+  isHighlightShrink: false,
+  isToc: false,
+  pageType: 'page'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="page" id="body-wrap"><header class="not-home-page" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Hexo</span></a></span><div id="menus"></div></nav><div id="page-site-info"><h1 id="site-title"></h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北航学生社团QQ群导航</title>
+    <meta name="description" content="北京航空航天大学学生社团QQ群导航，一站式发现属于你的热爱与伙伴">
+    <meta name="keywords" content="北航,BUAA,社团,QQ群,游戏,ACG,飞梦,电竞">
+    <style>
+        /* --- Basic Setup & Variables --- */
+        :root {
+            --primary-color: #005bac; /* BUAA Blue */
+            --secondary-color: #f0f8ff;
+            --accent-color: #d1eaff;
+            --text-color: #333;
+            --border-color: #ccc;
+            --header-bg: #fff;
+            --link-color: #007bff;
+            --success-color: #28a745;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 1rem;
+            background-color: var(--header-bg);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-top: 0.5rem;
+        }
+
+        /* Priority Call-to-Action Block */
+        .cta-box {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #e6f3ff 100%);
+            border: 2px solid var(--accent-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,91,172,0.1);
+        }
+
+        .cta-box h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        .cta-box p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box ol {
+            text-align: left;
+            display: inline-block;
+            margin: 0 auto 1.5rem auto;
+            padding: 1rem 1rem 1rem 2rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .cta-box li {
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--primary-color), #0066cc);
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,91,172,0.3);
+            cursor: pointer;
+            border: none;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(45deg, #004a8c, #0052a3);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,91,172,0.4);
+        }
+
+        .miniapp-note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #856404;
+        }
+
+        /* Section Styling */
+        section {
+            background-color: #fff;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 1px solid #f0f0f0;
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        section h3 {
+            color: #333;
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1rem;
+        }
+
+        section h4 {
+            color: #555;
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 1rem;
+        }
+
+        /* Search Bar Styling */
+        .search-container {
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        #searchInput {
+            width: 100%;
+            padding: 15px 20px;
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            font-size: 1rem;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+            background: white;
+        }
+
+        #searchInput:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(0,91,172,0.1);
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        th {
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #e6f3ff 100%);
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafbff;
+        }
+
+        tr:hover {
+            background-color: var(--accent-color);
+            transition: all 0.2s ease;
+        }
+
+        /* Copy Button Styling */
+        .copy-btn {
+            background: linear-gradient(45deg, var(--link-color), #0056b3);
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.2s ease;
+            margin-left: 10px;
+            font-weight: 500;
+        }
+
+        .copy-btn:hover {
+            background: linear-gradient(45deg, #0056b3, #004085);
+            transform: scale(1.05);
+        }
+
+        .copy-btn.copied {
+            background: linear-gradient(45deg, var(--success-color), #1e7e34);
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+            background: white;
+            border-radius: 12px;
+            margin-top: 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        /* Back to Top Button */
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 99;
+            border: none;
+            outline: none;
+            background-color: var(--primary-color);
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 50%;
+            font-size: 18px;
+            width: 50px;
+            height: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,91,172,0.3);
+        }
+
+        .back-to-top:hover {
+            background-color: #004a8c;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,91,172,0.4);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 10px;
+                margin: 10px auto;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            th, td {
+                padding: 8px 10px;
+                font-size: 0.9rem;
+            }
+            section {
+                padding: 1.5rem;
+            }
+            .cta-box {
+                padding: 1.5rem;
+            }
+            .cta-button {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+        }
+
+        /* 滚动条美化 */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--primary-color);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #004a8c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 北航学生社团QQ群导航</h1>
+            <p>一站式发现属于你的热爱与伙伴，轻松加入北航丰富多彩的社团生活。</p>
+        </header>
+
+        <main>
+            <section class="cta-box">
+                <h2>【重要通知】寻找最新、最全的社团群？请看这里！</h2>
+                <p>本页面信息最后更新于 <strong>2023年7月</strong>，部分群聊可能已变更。为了获取官方实时更新的社团名录与群聊信息，我们强烈推荐所有同学关注微信小程序 <strong>【鲸语校园】</strong>！</p>
+                <p>它是获取最准确社团信息的首选渠道，确保你不会错过任何招新和活动。</p>
+                <ol>
+                    <li>打开微信，搜索小程序「<strong>鲸语校园</strong>」。</li>
+                    <li>进入小程序后，点击下方菜单栏的「<strong>实用工具</strong>」。</li>
+                    <li>选择「<strong>社团群聊</strong>」板块，即可查看最全、最新的社团列表。</li>
+                </ol>
+                <button class="cta-button" onclick="openMiniApp()">📱 获取小程序信息</button>
+                <div class="miniapp-note">
+                    💡 <strong>温馨提示：</strong>如果无法直接跳转，请手动在微信中搜索「鲸语校园」小程序
+                </div>
+            </section>
+
+            <section>
+                <h2>🏫 新生必看：官方社团中心群</h2>
+                <p>对于初来乍到的新同学，社团中心新生群是了解北航社团全貌、获取各类社团招新及活动信息的第一站。强烈建议所有新生加入，以便快速融入校园生活。</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>社团名称</th>
+                            <th>QQ群号</th>
+                            <th>备注</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2024 北航社团中心新生群</td>
+                            <td>740209618 <button class="copy-btn" onclick="copyToClipboard(this, '740209618')">复制</button></td>
+                            <td>官方推荐，信息集散地</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h2>🎯 社团群聊总览</h2>
+                <p>下方是根据兴趣分类整理的社团群聊列表。你可以使用下方的搜索框快速查找你感兴趣的游戏或社团名称。</p>
+                
+                <div class="search-container">
+                    <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="🔍 在此输入社团、游戏或兴趣名称进行搜索...">
+                </div>
+
+                <h3>🎮 电子竞技 & 游戏世界</h3>
+                <p>这里汇集了北航校内各大热门游戏的交流群。无论你是电竞高手还是休闲玩家，都能在这里找到开黑的队友和共同话题的朋友。</p>
+                <table id="gaming-table">
+                    <thead>
+                        <tr>
+                            <th>社团/分部名称</th>
+                            <th>关联游戏</th>
+                            <th>QQ群号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>北航电竞社 LOL 分部</td><td>League of Legends</td><td>348316021 <button class="copy-btn" onclick="copyToClipboard(this, '348316021')">复制</button></td></tr>
+                        <tr><td>北航 cfm 交流群</td><td>CrossFire Mobile</td><td>643054292 <button class="copy-btn" onclick="copyToClipboard(this, '643054292')">复制</button></td></tr>
+                        <tr><td>北航 apex 交流群</td><td>Apex Legends</td><td>881395034 <button class="copy-btn" onclick="copyToClipboard(this, '881395034')">复制</button></td></tr>
+                        <tr><td>buaaの杀鸡小分队</td><td>Dead by Daylight</td><td>419236924 <button class="copy-btn" onclick="copyToClipboard(this, '419236924')">复制</button></td></tr>
+                        <tr><td>北航红警交流群</td><td>Red Alert</td><td>883069456 <button class="copy-btn" onclick="copyToClipboard(this, '883069456')">复制</button></td></tr>
+                        <tr><td>北航电竞社永劫无间分部</td><td>Naraka: Bladepoint</td><td>801240069 <button class="copy-btn" onclick="copyToClipboard(this, '801240069')">复制</button></td></tr>
+                        <tr><td>北航糖豆人专属开黑群</td><td>Fall Guys</td><td>296214115 <button class="copy-btn" onclick="copyToClipboard(this, '296214115')">复制</button></td></tr>
+                        <tr><td>北航瓦洛兰特群</td><td>Valorant</td><td>607321751 <button class="copy-btn" onclick="copyToClipboard(this, '607321751')">复制</button></td></tr>
+                        <tr><td>北航使命召唤&战区群</td><td>Call of Duty</td><td>853356470 <button class="copy-btn" onclick="copyToClipboard(this, '853356470')">复制</button></td></tr>
+                        <tr><td>北航第五人格群</td><td>Identity V</td><td>496154055 <button class="copy-btn" onclick="copyToClipboard(this, '496154055')">复制</button></td></tr>
+                        <tr><td>北航 LOLM 群</td><td>League of Legends: Wild Rift</td><td>390271007 <button class="copy-btn" onclick="copyToClipboard(this, '390271007')">复制</button></td></tr>
+                        <tr><td>北航金铲铲之战分部</td><td>Battle of the Golden Spatula</td><td>926793789 <button class="copy-btn" onclick="copyToClipboard(this, '926793789')">复制</button></td></tr>
+                        <tr><td>北航三角洲交流群</td><td>Delta Force</td><td>835366416 <button class="copy-btn" onclick="copyToClipboard(this, '835366416')">复制</button></td></tr>
+                        <tr><td>北航电竞社炉石分部</td><td>Hearthstone</td><td>480761379 <button class="copy-btn" onclick="copyToClipboard(this, '480761379')">复制</button></td></tr>
+                        <tr><td>北航电竞社 Dota2 分部</td><td>Dota 2</td><td>894164590 <button class="copy-btn" onclick="copyToClipboard(this, '894164590')">复制</button></td></tr>
+                        <tr><td>北航电竞社王者荣耀分部</td><td>Honor of Kings</td><td>799268226 <button class="copy-btn" onclick="copyToClipboard(this, '799268226')">复制</button></td></tr>
+                        <tr><td>北航电竞社吃鸡分部</td><td>PUBG</td><td>648825759 <button class="copy-btn" onclick="copyToClipboard(this, '648825759')">复制</button></td></tr>
+                        <tr><td>北航 CSGO 之家</td><td>CS:GO</td><td>161879870 <button class="copy-btn" onclick="copyToClipboard(this, '161879870')">复制</button></td></tr>
+                        <tr><td>北航 WOW 交流群</td><td>World of Warcraft</td><td>304252614 <button class="copy-btn" onclick="copyToClipboard(this, '304252614')">复制</button></td></tr>
+                        <tr><td>北航 war3 对战交流群</td><td>Warcraft III</td><td>561816217 <button class="copy-btn" onclick="copyToClipboard(this, '561816217')">复制</button></td></tr>
+                        <tr><td>北航 300 英雄交流群</td><td>300 Heroes</td><td>524880721 <button class="copy-btn" onclick="copyToClipboard(this, '524880721')">复制</button></td></tr>
+                        <tr><td>北航星际毒奶群</td><td>StarCraft</td><td>599601363 <button class="copy-btn" onclick="copyToClipboard(this, '599601363')">复制</button></td></tr>
+                        <tr><td>北航风暴分部</td><td>Heroes of the Storm</td><td>565363959 <button class="copy-btn" onclick="copyToClipboard(this, '565363959')">复制</button></td></tr>
+                        <tr><td>北航 R6 分部</td><td>Rainbow Six Siege</td><td>729678238 <button class="copy-btn" onclick="copyToClipboard(this, '729678238')">复制</button></td></tr>
+                        <tr><td>北航刺激战场鸡王群</td><td>PUBG Mobile</td><td>557928354 <button class="copy-btn" onclick="copyToClipboard(this, '557928354')">复制</button></td></tr>
+                        <tr><td>北航 DNF 交流群</td><td>Dungeon Fighter Online</td><td>835415810 <button class="copy-btn" onclick="copyToClipboard(this, '835415810')">复制</button></td></tr>
+                        <tr><td>北航战地交流群</td><td>Battlefield</td><td>807171835 <button class="copy-btn" onclick="copyToClipboard(this, '807171835')">复制</button></td></tr>
+                        <tr><td>北航 gta5 交流群</td><td>Grand Theft Auto V</td><td>835856191 <button class="copy-btn" onclick="copyToClipboard(this, '835856191')">复制</button></td></tr>
+                        <tr><td>北航暗区突围群</td><td>Arena Breakout</td><td>541282352 <button class="copy-btn" onclick="copyToClipboard(this, '541282352')">复制</button></td></tr>
+                        <tr><td>北航塔科夫群</td><td>Escape from Tarkov</td><td>1055616724 <button class="copy-btn" onclick="copyToClipboard(this, '1055616724')">复制</button></td></tr>
+                        <tr><td>BUAA-原神同好群</td><td>Genshin Impact</td><td>1148600588 <button class="copy-btn" onclick="copyToClipboard(this, '1148600588')">复制</button></td></tr>
+                        <tr><td>BUAA-明日方舟群</td><td>Arknights</td><td>489208718 <button class="copy-btn" onclick="copyToClipboard(this, '489208718')">复制</button></td></tr>
+                        <tr><td>BUAA-重返未来:1999群</td><td>Reverse: 1999</td><td>978840835 <button class="copy-btn" onclick="copyToClipboard(this, '978840835')">复制</button></td></tr>
+                        <tr><td>BUAA-崩坏:星穹铁道群</td><td>Honkai: Star Rail</td><td>1018206548 <button class="copy-btn" onclick="copyToClipboard(this, '1018206548')">复制</button></td></tr>
+                        <tr><td>飞梦麻将交流群</td><td>Mahjong</td><td>1013275993 <button class="copy-btn" onclick="copyToClipboard(this, '1013275993')">复制</button></td></tr>
+                        <tr><td>BUAA-碧蓝档案群</td><td>Blue Archive</td><td>862598610 <button class="copy-btn" onclick="copyToClipboard(this, '862598610')">复制</button></td></tr>
+                        <tr><td>BUAA-怪猎群</td><td>Monster Hunter</td><td>612167657 <button class="copy-btn" onclick="copyToClipboard(this, '612167657')">复制</button></td></tr>
+                        <tr><td>BUAA-BanG Dream!群</td><td>BanG Dream!</td><td>1017859811 <button class="copy-btn" onclick="copyToClipboard(this, '1017859811')">复制</button></td></tr>
+                        <tr><td>BUAA-PTCG群</td><td>Pokémon TCG</td><td>518010119 <button class="copy-btn" onclick="copyToClipboard(this, '518010119')">复制</button></td></tr>
+                        <tr><td>BUAA-桌游群</td><td>Board Games</td><td>928114232 <button class="copy-btn" onclick="copyToClipboard(this, '928114232')">复制</button></td></tr>
+                        <tr><td>BUAA-物华弥新群</td><td>Wu Hua</td><td>925661047 <button class="copy-btn" onclick="copyToClipboard(this, '925661047')">复制</button></td></tr>
+                        <tr><td>BUAA-DNF端游群</td><td>Dungeon Fighter Online</td><td>560991968 <button class="copy-btn" onclick="copyToClipboard(this, '560991968')">复制</button></td></tr>
+                        <tr><td>BUAA-尘白禁区群</td><td>Snowbreak: Containment Zone</td><td>107463566 <button class="copy-btn" onclick="copyToClipboard(this, '107463566')">复制</button></td></tr>
+                        <tr><td>BUAA-世界计划：多彩舞台群</td><td>Project SEKAI COLORFUL STAGE!</td><td>819157441 <button class="copy-btn" onclick="copyToClipboard(this, '819157441')">复制</button></td></tr>
+                        <tr><td>BUAA-少女前线2：追放群</td><td>Girls' Frontline 2: Exilium</td><td>883284372 <button class="copy-btn" onclick="copyToClipboard(this, '883284372')">复制</button></td></tr>
+                        <tr><td>BUAA-卡拉彼丘丘群</td><td>Calabi-Yau</td><td>770590364 <button class="copy-btn" onclick="copyToClipboard(this, '770590364')">复制</button></td></tr>
+                        <tr><td>北航决斗学院</td><td>Yu-Gi-Oh!</td><td>203161218 <button class="copy-btn" onclick="copyToClipboard(this, '203161218')">复制</button></td></tr>
+                        <tr><td>影之诗</td><td>Shadowverse</td><td>723912023 <button class="copy-btn" onclick="copyToClipboard(this, '723912023')">复制</button></td></tr>
+                        <tr><td>BUAA-崩坏3rd</td><td>Honkai Impact 3rd</td><td>146621480 <button class="copy-btn" onclick="copyToClipboard(this, '146621480')">复制</button></td></tr>
+                        <tr><td>崩坏学园2</td><td>Guns Girl Z</td><td>344676449 <button class="copy-btn" onclick="copyToClipboard(this, '344676449')">复制</button></td></tr>
+                        <tr><td>FGO迦勒底北航分部</td><td>Fate/Grand Order</td><td>691573894 <button class="copy-btn" onclick="copyToClipboard(this, '691573894')">复制</button></td></tr>
+                        <tr><td>BUAA-公主连结re:dive!</td><td>Princess Connect! Re: Dive</td><td>186485412 <button class="copy-btn" onclick="copyToClipboard(this, '186485412')">复制</button></td></tr>
+                        <tr><td>BUAA-赛马娘</td><td>Uma Musume Pretty Derby</td><td>605665069 <button class="copy-btn" onclick="copyToClipboard(this, '605665069')">复制</button></td></tr>
+                        <tr><td>BUAA-魔法记录</td><td>Magia Record</td><td>480113636 <button class="copy-btn" onclick="copyToClipboard(this, '480113636')">复制</button></td></tr>
+                        <tr><td>BUAA-禁闭者保护协会</td><td>Path to Nowhere</td><td>364288024 <button class="copy-btn" onclick="copyToClipboard(this, '364288024')">复制</button></td></tr>
+                        <tr><td>BUAA-战舰世界</td><td>World of Warships</td><td>168485770 <button class="copy-btn" onclick="copyToClipboard(this, '168485770')">复制</button></td></tr>
+                        <tr><td>碧蓝航线打捞部</td><td>Azur Lane</td><td>677105922 <button class="copy-btn" onclick="copyToClipboard(this, '677105922')">复制</button></td></tr>
+                        <tr><td>仰望星空提督府</td><td>Kantai Collection</td><td>158335341 <button class="copy-btn" onclick="copyToClipboard(this, '158335341')">复制</button></td></tr>
+                        <tr><td>邦邦分队@BUAA</td><td>BanG Dream!</td><td>588366359 <button class="copy-btn" onclick="copyToClipboard(this, '588366359')">复制</button></td></tr>
+                        <tr><td>BUAA-第五人格</td><td>Identity V</td><td>753460394 <button class="copy-btn" onclick="copyToClipboard(this, '753460394')">复制</button></td></tr>
+                        <tr><td>BUAA-动物森友会</td><td>Animal Crossing</td><td>1063683972 <button class="copy-btn" onclick="copyToClipboard(this, '1063683972')">复制</button></td></tr>
+                        <tr><td>FF14艾欧泽亚咸鱼旅游团</td><td>Final Fantasy XIV</td><td>657344711 <button class="copy-btn" onclick="copyToClipboard(this, '657344711')">复制</button></td></tr>
+                        <tr><td>飞梦ow车队</td><td>Overwatch</td><td>798519673 <button class="copy-btn" onclick="copyToClipboard(this, '798519673')">复制</button></td></tr>
+                        <tr><td>Pokemon</td><td>Pokémon</td><td>518010119 <button class="copy-btn" onclick="copyToClipboard(this, '518010119')">复制</button></td></tr>
+                        <tr><td>Plants Vs Zombies and More</td><td>Plants vs. Zombies</td><td>576721580 <button class="copy-btn" onclick="copyToClipboard(this, '576721580')">复制</button></td></tr>
+                        <tr><td>北航少前格里芬海豹部</td><td>Girls' Frontline</td><td>576529761 <button class="copy-btn" onclick="copyToClipboard(this, '576529761')">复制</button></td></tr>
+                        <tr><td>Osu!沙包交流群</td><td>Osu!</td><td>32297909 <button class="copy-btn" onclick="copyToClipboard(this, '32297909')">复制</button></td></tr>
+                        <tr><td>BUAA-Rainbow6</td><td>Rainbow Six Siege</td><td>622128909 <button class="copy-btn" onclick="copyToClipboard(this, '622128909')">复制</button></td></tr>
+                        <tr><td>舰R提督群</td><td>Warship Girls R</td><td>321440913 <button class="copy-btn" onclick="copyToClipboard(this, '321440913')">复制</button></td></tr>
+                        <tr><td>网页解谜游戏</td><td>Web-based Puzzle Games</td><td>810322061 <button class="copy-btn" onclick="copyToClipboard(this, '810322061')">复制</button></td></tr>
+                        <tr><td>BUAA元气骑士</td><td>Soul Knight</td><td>67303221 <button class="copy-btn" onclick="copyToClipboard(this, '67303221')">复制</button></td></tr>
+                        <tr><td>BUAA-MC/TR交流群</td><td>Minecraft / Terraria</td><td>643256735 <button class="copy-btn" onclick="copyToClipboard(this, '643256735')">复制</button></td></tr>
+                        <tr><td>阴阳师</td><td>Onmyoji</td><td>374583608 <button class="copy-btn" onclick="copyToClipboard(this, '374583608')">复制</button></td></tr>
+                        <tr><td>乖离氪金王</td><td>Kai-ri-Sei Million Arthur</td><td>451656296 <button class="copy-btn" onclick="copyToClipboard(this, '451656296')">复制</button></td></tr>
+                        <tr><td>Steam</td><td>Steam</td><td>462521642 <button class="copy-btn" onclick="copyToClipboard(this, '462521642')">复制</button></td></tr>
+                        <tr><td>BUAA-战争游戏交流</td><td>War Games</td><td>718384233 <button class="copy-btn" onclick="copyToClipboard(this, '718384233')">复制</button></td></tr>
+                        <tr><td>绯染天空</td><td>Heaven Burns Red</td><td>250316079 <button class="copy-btn" onclick="copyToClipboard(this, '250316079')">复制</button></td></tr>
+                    </tbody>
+                </table>
+
+                <h3>🎨 飞梦ACG联盟</h3>
+                <p>飞梦ACG联盟是北航校内一个大型的动漫、漫画、游戏文化爱好者社团，内部分为多个分部与分群，覆盖了广泛的兴趣领域。它不仅是一个社团，更是一个充满活力的大家庭。</p>
+
+                <h4>联盟主群 & 分部</h4>
+                <table id="feimeng-main-table">
+                    <thead>
+                        <tr>
+                            <th>名称</th>
+                            <th>QQ群号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>飞梦ACG联盟24级交流群</td><td>659968976 <button class="copy-btn" onclick="copyToClipboard(this, '659968976')">复制</button></td></tr>
+                        <tr><td>飞梦主群</td><td>830827393 <button class="copy-btn" onclick="copyToClipboard(this, '830827393')">复制</button></td></tr>
+                        <tr><td>北航幻想乡</td><td>308366970 <button class="copy-btn" onclick="copyToClipboard(this, '308366970')">复制</button></td></tr>
+                        <tr><td>飞梦动画同好会</td><td>717150334 <button class="copy-btn" onclick="copyToClipboard(this, '717150334')">复制</button></td></tr>
+                        <tr><td>北航LoveLive研究会</td><td>141845757 <button class="copy-btn" onclick="copyToClipboard(this, '141845757')">复制</button></td></tr>
+                        <tr><td>新次元掌/主机联盟</td><td>333195021 <button class="copy-btn" onclick="copyToClipboard(this, '333195021')">复制</button></td></tr>
+                        <tr><td>白鸽桌游俱乐部</td><td>959762262 <button class="copy-btn" onclick="copyToClipboard(this, '959762262')">复制</button></td></tr>
+                        <tr><td>不存在cosplay部</td><td>558785485 <button class="copy-btn" onclick="copyToClipboard(this, '558785485')">复制</button></td></tr>
+                        <tr><td>tan90宅舞部</td><td>647259575 <button class="copy-btn" onclick="copyToClipboard(this, '647259575')">复制</button></td></tr>
+                        <tr><td>BUAA轻音部(乐器&Vocal)</td><td>632989563 <button class="copy-btn" onclick="copyToClipboard(this, '632989563')">复制</button></td></tr>
+                        <tr><td>飞梦Vocaloid部</td><td>383188002 <button class="copy-btn" onclick="copyToClipboard(this, '383188002')">复制</button></td></tr>
+                    </tbody>
+                </table>
+
+                <h4>动漫小说 & 其他兴趣分群</h4>
+                <table id="feimeng-sub-table">
+                    <thead>
+                        <tr>
+                            <th>分类</th>
+                            <th>群聊名称</th>
+                            <th>QQ群号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>动漫小说类</td><td>galgame讨论</td><td>305498028 <button class="copy-btn" onclick="copyToClipboard(this, '305498028')">复制</button></td></tr>
+                        <tr><td>动漫小说类</td><td>漫画同好会</td><td>591523776 <button class="copy-btn" onclick="copyToClipboard(this, '591523776')">复制</button></td></tr>
+                        <tr><td>动漫小说类</td><td>飞梦插画/画师同好会</td><td>733288254 <button class="copy-btn" onclick="copyToClipboard(this, '733288254')">复制</button></td></tr>
+                        <tr><td>动漫小说类</td><td>132プロ偶像大师研究会</td><td>465472158 <button class="copy-btn" onclick="copyToClipboard(this, '465472158')">复制</button></td></tr>
+                        <tr><td>动漫小说类</td><td>北航佐贺偶像群</td><td>930578661 <button class="copy-btn" onclick="copyToClipboard(this, '930578661')">复制</button></td></tr>
+                        <tr><td>动漫小说类</td><td>buaa舞台创造科</td><td>879426043 <button class="copy-btn" onclick="copyToClipboard(this, '879426043')">复制</button></td></tr>
+                        <tr><td>动漫小说类</td><td>飞梦百合同好会</td><td>938340319 <button class="copy-btn" onclick="copyToClipboard(this, '938340319')">复制</button></td></tr>
+                        <tr><td>动漫小说类</td><td>BUAA-欧美同好会</td><td>807402903 <button class="copy-btn" onclick="copyToClipboard(this, '807402903')">复制</button></td></tr>
+                        <tr><td>动漫小说类</td><td>声优粉丝交流中心</td><td>399174171 <button class="copy-btn" onclick="copyToClipboard(this, '399174171')">复制</button></td></tr>
+                        <tr><td>动漫小说类</td><td>轻小说讨论创作会</td><td>1045116356 <button class="copy-btn" onclick="copyToClipboard(this, '1045116356')">复制</button></td></tr>
+                        <tr><td>动漫小说类</td><td>飞梦配音部</td><td>952330518 <button class="copy-btn" onclick="copyToClipboard(this, '952330518')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>飞梦养生部</td><td>478940047 <button class="copy-btn" onclick="copyToClipboard(this, '478940047')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>飞梦小卖部</td><td>829940997 <button class="copy-btn" onclick="copyToClipboard(this, '829940997')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>飞梦AI作画交流组</td><td>661348651 <button class="copy-btn" onclick="copyToClipboard(this, '661348651')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>飞梦地偶同好会</td><td>232079122 <button class="copy-btn" onclick="copyToClipboard(this, '232079122')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>飞梦学习部</td><td>754080144 <button class="copy-btn" onclick="copyToClipboard(this, '754080144')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>BUAA-AMV/MAD</td><td>459239621 <button class="copy-btn" onclick="copyToClipboard(this, '459239621')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>BUAA车研会</td><td>446015998 <button class="copy-btn" onclick="copyToClipboard(this, '446015998')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>BUAA-MMDers</td><td>894037063 <button class="copy-btn" onclick="copyToClipboard(this, '894037063')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>BUAA-Vtuber单推dd特区</td><td>712449090 <button class="copy-btn" onclick="copyToClipboard(this, '712449090')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>JK/Lolita</td><td>576095923 <button class="copy-btn" onclick="copyToClipboard(this, '576095923')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>BUAA漫展面基群</td><td>959692812 <button class="copy-btn" onclick="copyToClipboard(this, '959692812')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>BUAA铁道研究会</td><td>860325561 <button class="copy-btn" onclick="copyToClipboard(this, '860325561')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>buaa特摄同好会</td><td>942137204 <button class="copy-btn" onclick="copyToClipboard(this, '942137204')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>飞梦模玩手办部（原新次元模型部）</td><td>184826900 <button class="copy-btn" onclick="copyToClipboard(this, '184826900')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>宅艺研究会</td><td>593668358 <button class="copy-btn" onclick="copyToClipboard(this, '593668358')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>令和日语学习部</td><td>473536754 <button class="copy-btn" onclick="copyToClipboard(this, '473536754')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>腐群</td><td>172504680 <button class="copy-btn" onclick="copyToClipboard(this, '172504680')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>技术宅Coding</td><td>307979562 <button class="copy-btn" onclick="copyToClipboard(this, '307979562')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>凹凸世界</td><td>668320728 <button class="copy-btn" onclick="copyToClipboard(this, '668320728')">复制</button></td></tr>
+                        <tr><td>其他类</td><td>BUAA-日亚拼团群</td><td>788198918 <button class="copy-btn" onclick="copyToClipboard(this, '788198918')">复制</button></td></tr>
+                    </tbody>
+                </table>
+
+                <h3>📚 文化 & 兴趣爱好</h3>
+                <p>除了游戏和ACG，北航还有许多聚焦于特定文化作品或兴趣爱好的社群。</p>
+                <table id="culture-table">
+                    <thead>
+                        <tr>
+                            <th>社团名称</th>
+                            <th>QQ群号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>北航火影群</td><td>226787912 <button class="copy-btn" onclick="copyToClipboard(this, '226787912')">复制</button></td></tr>
+                        <tr><td>北航漫威战争群</td><td>912035340 <button class="copy-btn" onclick="copyToClipboard(this, '912035340')">复制</button></td></tr>
+                    </tbody>
+                </table>
+
+                <h3>🤝 友社群聊</h3>
+                <p>这些是与北航社团联系紧密的校外或跨校社团，为同学们提供了更广阔的交流平台。</p>
+                <table id="affiliated-table">
+                    <thead>
+                        <tr>
+                            <th>社团名称</th>
+                            <th>QQ群号</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>七海游戏文化社</td><td>1045295609 <button class="copy-btn" onclick="copyToClipboard(this, '1045295609')">复制</button></td></tr>
+                        <tr><td>原野手绘社</td><td>235571614 <button class="copy-btn" onclick="copyToClipboard(this, '235571614')">复制</button></td></tr>
+                        <tr><td>星月口琴社</td><td>938462590 <button class="copy-btn" onclick="copyToClipboard(this, '938462590')">复制</button></td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p><strong>⚠️ 免责声明：</strong>本页面由学生自发整理，旨在为北航同学提供便利。所有信息均来源于公开渠道，最后核对时间为2023年7月31日。社团及群聊信息可能随时变更，最准确的信息请务必以【鲸语校园】小程序为准。</p>
+            <p>🌟 发现更多社团，体验更多精彩？立即前往 <strong>鲸语校园</strong> 小程序！</p>
+            <p id="last-updated">📅 页面内容更新于 2023-07-31 | 页面优化版本 v2.0</p>
+        </footer>
+    </div>
+
+    <!-- 回到顶部按钮 -->
+    <button class="back-to-top" onclick="scrollToTop()" id="backToTopBtn">↑</button>
+
+    <script>
+        /**
+         * 尝试打开小程序
+         */
+        function openMiniApp() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            
+            // 检测微信环境
+            if (userAgent.includes('micromessenger')) {
+                // 提示用户在微信中搜索
+                alert('请在微信中搜索「鲸语校园」小程序\n\n步骤：\n1. 点击微信下方的「发现」\n2. 选择「小程序」\n3. 搜索「鲸语校园」\n4. 进入后找到「实用工具」->「社团群聊」');
+            } 
+            // 检测QQ环境  
+            else if (userAgent.includes('qq')) {
+                alert('请在QQ中搜索「鲸语校园」小程序\n\n或在微信中搜索获取更全面的功能');
+            }
+            // 桌面浏览器或其他环境
+            else {
+                if (confirm('无法直接跳转小程序。\n\n请手动操作：\n1. 打开微信\n2. 搜索「鲸语校园」小程序\n3. 进入后找到「实用工具」->「社团群聊」\n\n点击确定复制小程序名称到剪贴板')) {
+                    copyToClipboard(null, '鲸语校园');
+                }
+            }
+        }
+
+        /**
+         * 复制功能
+         */
+        function copyToClipboard(button, textToCopy) {
+            // 现代浏览器使用 Clipboard API
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(textToCopy).then(() => {
+                    showCopySuccess(button, textToCopy);
+                }).catch(err => {
+                    fallbackCopy(button, textToCopy);
+                });
+            } else {
+                // 降级方案
+                fallbackCopy(button, textToCopy);
+            }
+        }
+
+        /**
+         * 降级复制方案
+         */
+        function fallbackCopy(button, textToCopy) {
+            const textArea = document.createElement("textarea");
+            textArea.value = textToCopy;
+            textArea.style.position = 'fixed';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            
+            try {
+                document.execCommand('copy');
+                showCopySuccess(button, textToCopy);
+            } catch (err) {
+                if (button) {
+                    alert('复制失败，请手动复制群号：' + textToCopy);
+                } else {
+                    alert('复制失败，请手动搜索：鲸语校园');
+                }
+            }
+            
+            document.body.removeChild(textArea);
+        }
+
+        /**
+         * 显示复制成功
+         */
+        function showCopySuccess(button, textToCopy) {
+            if (button) {
+                const originalText = button.textContent;
+                button.textContent = '✓ 已复制!';
+                button.classList.add('copied');
+                
+                setTimeout(() => {
+                    button.textContent = originalText;
+                    button.classList.remove('copied');
+                }, 2000);
+            } else {
+                alert('✓ 小程序名称已复制到剪贴板！');
+            }
+        }
+
+        /**
+         * 搜索过滤功能
+         */
+        function filterTable() {
+            const input = document.getElementById("searchInput");
+            const filter = input.value.toUpperCase();
+            const tables = document.querySelectorAll("table[id]");
+
+            let totalVisible = 0;
+
+            tables.forEach(table => {
+                const tr = table.getElementsByTagName("tr");
+                let tableHasVisible = false;
+
+                for (let i = 1; i < tr.length; i++) {
+                    const row = tr[i];
+                    const cells = row.getElementsByTagName("td");
+                    let match = false;
+
+                    for (let j = 0; j < cells.length; j++) {
+                        const cell = cells[j];
+                        if (cell) {
+                            const txtValue = cell.textContent || cell.innerText;
+                            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                                match = true;
+                                break;
+                            }
+                        }
+                    }
+
+                    if (match) {
+                        row.style.display = "";
+                        tableHasVisible = true;
+                        totalVisible++;
+                    } else {
+                        row.style.display = "none";
+                    }
+                }
+
+                // 如果表格没有可见行，隐藏相关标题
+                if (filter !== "") {
+                    const section = table.closest('section');
+                    if (section) {
+                        const h3 = table.previousElementSibling;
+                        const h4 = table.previousElementSibling;
+                        if (h3 && h3.tagName === 'H3') {
+                            h3.style.display = tableHasVisible ? "" : "none";
+                        }
+                        if (h4 && h4.tagName === 'H4') {
+                            h4.style.display = tableHasVisible ? "" : "none";
+                        }
+                    }
+                } else {
+                    // 重置显示状态
+                    const section = table.closest('section');
+                    if (section) {
+                        const headings = section.querySelectorAll('h3, h4');
+                        headings.forEach(heading => {
+                            heading.style.display = "";
+                        });
+                    }
+                }
+            });
+        }
+
+        /**
+         * 回到顶部
+         */
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        /**
+         * 显示/隐藏回到顶部按钮
+         */
+        function toggleBackToTopButton() {
+            const button = document.getElementById('backToTopBtn');
+            if (window.pageYOffset > 300) {
+                button.style.display = 'block';
+            } else {
+                button.style.display = 'none';
+            }
+        }
+
+        /**
+         * 页面加载完成后的初始化
+         */
+        document.addEventListener('DOMContentLoaded', function() {
+            // 监听滚动事件
+            window.addEventListener('scroll', toggleBackToTopButton);
+            
+            // 初始检查回到顶部按钮状态
+            toggleBackToTopButton();
+
+            // 添加搜索提示
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', function() {
+                if (this.value.length > 0) {
+                    this.style.borderColor = 'var(--primary-color)';
+                } else {
+                    this.style.borderColor = 'var(--border-color)';
+                }
+            });
+        });
+
+        /**
+         * 预加载优化
+         */
+        window.addEventListener('load', function() {
+            // 页面加载完成后的优化操作
+            console.log('北航社团导航页面加载完成 🎉');
+        });
+    </script>
+</body>
+</html>
+</div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/butterfly-icon.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">John Doe</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">0</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Posts</span></div><div class="aside-list"></div></div><div class="card-widget card-archives"></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Website Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article Count :</div><div class="item-count">0</div></div><div class="webinfo-item"><div class="item-name">Unique Visitors :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Page Views :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-17T06:00:23.973Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;2025 By John Doe</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.4.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle Between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
